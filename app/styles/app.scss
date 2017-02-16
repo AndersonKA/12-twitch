@@ -2,5 +2,17 @@
 // @import 'normalize-css/normalize';
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$c-sidebar: #17141f;
+$c-white: #fff;
+
 @import 'font-awesome';
 @import 'box-sizing';
+@import 'resets';
+
+
+.sidebar {
+  max-width: 15rem;
+  background: $c-sidebar;
+  color: $c-white;
+  height: 100vh;
+}
