@@ -4,6 +4,11 @@
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 $c-sidebar: #17141f;
 $c-white: #fff;
+$c-jamaica1: #318712;
+$c-jamaica2: #1946c9;
+$c-jamaica3: #7a3590;
+$c-border: #989d9e;
+$c-notwhite: #c1bfc7;
 
 @import 'font-awesome';
 @import 'box-sizing';
@@ -13,12 +18,11 @@ $c-white: #fff;
 
 
 .sidebar {
-  max-width: 15rem;
-  background: $c-sidebar;
-  color: $c-white;
+  max-width: 10rem;
   height: 100vh;
   padding: 1rem;
-
+  background: $c-sidebar;
+  color: $c-white;
 }
 
 .twitch__logo {
@@ -27,5 +31,92 @@ $c-white: #fff;
 }
 
 .search {
-  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.browse {
+  padding: 0.5rem;
+}
+
+.fa {
+  padding-right: 0.5rem;
+}
+
+.free {
+  display: flex;
+  flex-direction: column;
+  background: $c-jamaica1;
+
+
+  &__prime {
+    padding: 0.5rem;
+    border-bottom: 0.025rem solid $c-border;
+    text-transform: uppercase;
+
+    &--icon {
+      max-width: 1rem;
+    }
+    &--subtitle {
+      color: $c-notwhite;
+    }
+  }
+}
+
+.recommended {
+  background: $c-jamaica2;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+
+  &__user {
+  }
+
+  &__user--icon {
+    max-width: 1.5rem;
+  }
+
+  &__user--streaming {
+    color: $c-notwhite;
+  }
+}
+
+
+
+.more {
+  background: $c-jamaica3;
+  display: flex;
+  margin-bottom: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__title {
+    padding: 0.5rem;
+    border-bottom: 0.025rem solid $c-border;
+    text-transform: uppercase;
+  }
+}
+
+.more__options {
+
+}
+
+.more__options--thing {
+  width: 50%;
+  position: relative;
+}
+
+
+.buttons {
+  text-align: center;
+  margin-right: 0.5rem;
+  width: calc(50% - 10px);
+
+
+.buttons__button {
+background-color: #6441a4;
+color: white;
+cursor: pointer;
+display: inline-block;
+line-height: 2rem;
+}
 }
