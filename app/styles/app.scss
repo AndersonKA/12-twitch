@@ -7,6 +7,7 @@ $c-white: #fff;
 $c-jamaica1: #318712;
 $c-jamaica2: #1946c9;
 $c-jamaica3: #7a3590;
+$c-jamaica4: #45afc7;
 $c-border: #989d9e;
 $c-notwhite: #c1bfc7;
 @import 'font-awesome';
@@ -15,7 +16,6 @@ $c-notwhite: #c1bfc7;
 
 .sidebar {
   max-width: 15rem;
-
   padding: 1rem;
   background: $c-sidebar;
   color: $c-white;
@@ -24,10 +24,16 @@ $c-notwhite: #c1bfc7;
 .twitch__logo {
   max-width: 4rem;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .search {
-  padding: 0.5rem;
+  padding: 0.5rem 0;
+
+  &__bar {
+    padding: 0.5rem 0;
+  }
 }
 
 .browse {
@@ -65,14 +71,22 @@ $c-notwhite: #c1bfc7;
   background: $c-jamaica2;
 
   &__title {
+    padding: 0.5rem 0;
     border-bottom: 0.025rem solid $c-border;
     text-transform: uppercase;
-    padding: 0.5rem 0;
+  }
+
+  &__user {
+    background: $c-jamaica4;
   }
 
   &__user--icon {
-    margin-top: 0.5rem;
     max-width: 1.5rem;
+    margin-top: 0.5rem;
+  }
+
+  &__user--name {
+    flex-direction: column;
   }
 
   &__user--streaming {
@@ -82,7 +96,7 @@ $c-notwhite: #c1bfc7;
 
 .more {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 2rem;
   background: $c-jamaica3;
@@ -95,9 +109,9 @@ $c-notwhite: #c1bfc7;
 }
 
 .more__options--thing {
+  display: flex;
   position: relative;
   width: 50%;
-  display: flex;
 }
 
 .buttons {
@@ -110,4 +124,17 @@ $c-notwhite: #c1bfc7;
     background-color: $c-jamaica3;
     color: $c-white;
   }
+}
+
+.section {
+  background: $c-jamaica1;
+}
+
+.list__link {
+  color: $c-jamaica3;
+  text-decoration: none;
+}
+
+.list__link1 {
+  color: $c-sidebar;
 }
