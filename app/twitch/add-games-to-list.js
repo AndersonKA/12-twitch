@@ -1,3 +1,7 @@
-import createGameElemnt from './create-game-element';
+import createGameElement from './create-game-element';
 
-export default null;
+export default function showGamesInList(parentEl, data) {
+  for (var i = 0; i < data.top.length; i++) {
+    data.top[i]
+  }
+};
