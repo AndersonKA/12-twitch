@@ -1,7 +1,7 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 $c-sidebar: #17141f;
 $c-white: #fff;
 
@@ -10,9 +10,22 @@ $c-white: #fff;
 @import 'resets';
 
 
+
+
 .sidebar {
   max-width: 15rem;
   background: $c-sidebar;
   color: $c-white;
   height: 100vh;
+  padding: 1rem;
+
+}
+
+.twitch__logo {
+  max-width: 4rem;
+  margin: 1rem;
+}
+
+.search {
+  margin: 0.5rem;
 }
