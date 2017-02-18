@@ -55,8 +55,9 @@ $c-notwhite: #c1bfc7;
     text-transform: uppercase;
 
     &--icon {
-      max-width: 1rem;
+      max-width: 1.5rem;
     }
+
 
     &--subtitle {
       color: $c-notwhite;
@@ -78,11 +79,19 @@ $c-notwhite: #c1bfc7;
 
   &__user {
     background: $c-jamaica4;
+    display: flex;
+    max-height: 2rem;
   }
 
   &__user--icon {
     max-width: 1.5rem;
     margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  &__user--info {
+
+
   }
 
   &__user--name {
