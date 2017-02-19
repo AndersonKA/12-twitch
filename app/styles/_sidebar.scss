@@ -1,0 +1,141 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  max-width: 15rem;
+  padding: 1rem;
+  background: $c-sidebar;
+  color: $c-white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twitch__logo {
+  max-width: 4rem;
+  margin-bottom: 1rem;
+}
+
+.search__bar {
+  margin: 0.5rem -0.75rem;
+  padding: 0.5rem;
+}
+
+
+.browse {
+  margin: 0.5rem 0;
+}
+
+.fa {
+  padding-right: 0.5rem;
+}
+
+.free {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding: 0.5rem 0;
+    border-bottom: 0.025rem solid $c-border;
+    text-transform: uppercase;
+  }
+
+  &__prime--bottom {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__prime--icon {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  &__prime--info {
+    padding: 0.25rem;
+  }
+
+  &__prime--title {
+    flex-direction: column;
+  }
+
+  &__prime--subtitle {
+    color: $c-notwhite;
+  }
+}
+
+.recommended {
+  display: flex;
+  flex-direction: column;
+
+
+  &__title {
+    padding: 0.5rem 0;
+    border-bottom: 0.025rem solid $c-border;
+    text-transform: uppercase;
+  }
+
+  &__user {
+    display: flex;
+    max-height: 2rem;
+  }
+
+  &__user--icon {
+    max-width: 1.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+
+  }
+
+  &__user--info {
+    padding-top: 0.25rem;
+
+  }
+
+  &__user--name {
+    flex-direction: column;
+  }
+
+  &__user--streaming {
+    color: $c-notwhite;
+  }
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+
+  &__title {
+    padding: 0.5rem 0;
+    border-bottom: 0.025rem solid $c-border;
+    text-transform: uppercase;
+  }
+}
+
+.more__options {
+  padding-top: 0.5rem;
+}
+
+.more__options--thing {
+  display: flex;
+  position: relative;
+  width: 50%;
+}
+
+.buttons {
+  margin-right: 0.5rem;
+  text-align: center;
+
+  &__button {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: $c-jamaica3;
+    color: $c-white;
+    text-decoration: none;
+  }
+}

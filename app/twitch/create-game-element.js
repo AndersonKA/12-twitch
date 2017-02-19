@@ -1,5 +1,4 @@
 export default function createGameItem(data) {
-
   const liItem = document.createElement('li');
   // adding a class of li
   liItem.classList.add('game-item');
