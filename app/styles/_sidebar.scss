@@ -1,10 +1,11 @@
 .sidebar {
   display: flex;
+  position: fixed;
   flex-direction: column;
-  max-width: 15rem;
+  max-width: 14rem;
   padding: 1rem;
   background: $c-sidebar;
-  color: $c-white;
+  color: $c-whiteish;
 }
 
 .logo {
@@ -15,17 +16,25 @@
 
 .twitch__logo {
   max-width: 4rem;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 
 .search__bar {
-  margin: 0.5rem -0.75rem;
-  padding: 0.5rem;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background: $c-sidebar2;
 }
 
-
 .browse {
-  margin: 0.5rem 0;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 0.25rem $c-jamaica3 solid;
+  background: $c-sidebar2;
 }
 
 .fa {
@@ -37,7 +46,7 @@
   flex-direction: column;
 
   &__title {
-    padding: 0.5rem 0;
+    padding-bottom: 0.5rem;
     border-bottom: 0.025rem solid $c-border;
     text-transform: uppercase;
   }
@@ -45,6 +54,7 @@
   &__prime--bottom {
     display: flex;
     flex-wrap: wrap;
+    margin: 0.5rem 0;
   }
 
   &__prime--icon {
@@ -64,6 +74,7 @@
 
   &__prime--subtitle {
     color: $c-notwhite;
+    font-weight: lighter;
   }
 }
 
@@ -71,11 +82,14 @@
   display: flex;
   flex-direction: column;
 
-
   &__title {
     padding: 0.5rem 0;
     border-bottom: 0.025rem solid $c-border;
     text-transform: uppercase;
+  }
+
+  &__bottom {
+    margin: 0.5rem 0;
   }
 
   &__user {
@@ -101,14 +115,12 @@
 
   &__user--streaming {
     color: $c-notwhite;
+    font-weight: lighter;
   }
 }
 
 .more {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
+  margin: 0.5rem 0;
 
   &__title {
     padding: 0.5rem 0;
@@ -118,13 +130,13 @@
 }
 
 .more__options {
-  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
 }
 
 .more__options--thing {
-  display: flex;
-  position: relative;
-  width: 50%;
+  padding: 0.25rem 0;
 }
 
 .buttons {
@@ -133,9 +145,10 @@
 
   &__button {
     display: inline-block;
-    padding: 0.5rem;
+    margin: 0 0.25rem;
+    padding: 0.5rem 1rem;
     background-color: $c-jamaica3;
-    color: $c-white;
+    color: $c-whiteish;
     text-decoration: none;
   }
 }

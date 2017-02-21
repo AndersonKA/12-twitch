@@ -2,14 +2,14 @@ export default function createGameItem(data) {
   const liItem = document.createElement('li');
   // adding a class of li
   liItem.classList.add('game-item');
+  liItem.classList.add('grid__item');
 
   liItem.innerHTML = `
-  <div class="frame">
-    <h3 class="game-item__name"></h3>
-    <h4 class="game-item__popularity"></h4>
-  </div>
   <img src="" alt="" class="game-item__pic">
-    `;
+  <div class="frame">
+    <div class="game-item__name"></div>
+    <div class="game-item__popularity"></div>
+  </div>`;
 
   const title = liItem.querySelector('.game-item__name');
   title.innerText = data.name;

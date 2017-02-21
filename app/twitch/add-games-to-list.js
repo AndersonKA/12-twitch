@@ -1,6 +1,6 @@
 import createGameElement from './create-game-element';
 
-export default function addGamesToList(parentEl, data) {
+export default function showGamesInList(parentEl, data) {
   // clears the list
   parentEl.innerHTML = '';
 
