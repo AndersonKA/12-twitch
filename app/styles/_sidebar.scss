@@ -1,11 +1,15 @@
 .sidebar {
   display: flex;
-  position: fixed;
+
   flex-direction: column;
   max-width: 14rem;
   padding: 1rem;
   background: $c-sidebar;
   color: $c-whiteish;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .logo {

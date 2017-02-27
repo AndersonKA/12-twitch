@@ -11,6 +11,7 @@ $c-jamaica4: #45afc7;
 $c-border: #989d9e;
 $c-notwhite: #c1bfc7;
 $c-sidebar2: #201c2b;
+$c-darkgray: #525154;
 
 @import 'font-awesome';
 @import 'box-sizing';
@@ -20,6 +21,17 @@ $c-sidebar2: #201c2b;
 .section {
   margin-left: 16rem;
   padding-right: 2rem;
+}
+
+.main__browse {
+  color: $c-darkgray;
+}
+
+.main__ad {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 1rem;
 }
 
 .list {
@@ -51,14 +63,14 @@ $c-sidebar2: #201c2b;
   margin: -1rem;
 
   &__item {
-    flex-basis: calc(100% / 5 - 2rem);
+    flex-basis: calc(100% / 5 - 4rem);
     flex-grow: 1;
     margin: 1rem;
   }
 }
 
 .game-item__pic {
-  width: 100%;
+  min-width: 10rem;
 }
 
 .game-item__popularity {
