@@ -1,0 +1,158 @@
+.sidebar {
+  display: flex;
+
+  flex-direction: column;
+  max-width: 14rem;
+  padding: 1rem;
+  background: $c-sidebar;
+  color: $c-whiteish;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.twitch__logo {
+  max-width: 4rem;
+  margin-top: 0.5rem;
+}
+
+.search__bar {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background: $c-sidebar2;
+}
+
+.browse {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 0.25rem $c-jamaica3 solid;
+  background: $c-sidebar2;
+}
+
+.fa {
+  padding-right: 0.5rem;
+}
+
+.free {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding-bottom: 0.5rem;
+    border-bottom: 0.025rem solid $c-border;
+    text-transform: uppercase;
+  }
+
+  &__prime--bottom {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+  }
+
+  &__prime--icon {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  &__prime--info {
+    padding: 0.25rem;
+  }
+
+  &__prime--title {
+    flex-direction: column;
+  }
+
+  &__prime--subtitle {
+    color: $c-notwhite;
+    font-weight: lighter;
+  }
+}
+
+.recommended {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    padding: 0.5rem 0;
+    border-bottom: 0.025rem solid $c-border;
+    text-transform: uppercase;
+  }
+
+  &__bottom {
+    margin: 0.5rem 0;
+  }
+
+  &__user {
+    display: flex;
+    max-height: 2rem;
+  }
+
+  &__user--icon {
+    max-width: 1.5rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+
+  }
+
+  &__user--info {
+    padding-top: 0.25rem;
+
+  }
+
+  &__user--name {
+    flex-direction: column;
+  }
+
+  &__user--streaming {
+    color: $c-notwhite;
+    font-weight: lighter;
+  }
+}
+
+.more {
+  margin: 0.5rem 0;
+
+  &__title {
+    padding: 0.5rem 0;
+    border-bottom: 0.025rem solid $c-border;
+    text-transform: uppercase;
+  }
+}
+
+.more__options {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.more__options--thing {
+  padding: 0.25rem 0;
+}
+
+.buttons {
+  margin-right: 0.5rem;
+  text-align: center;
+
+  &__button {
+    display: inline-block;
+    margin: 0 0.25rem;
+    padding: 0.5rem 1rem;
+    background-color: $c-jamaica3;
+    color: $c-whiteish;
+    text-decoration: none;
+  }
+}

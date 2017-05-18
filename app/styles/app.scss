@@ -1,6 +1,83 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+$c-sidebar: #17141f;
+$c-whiteish: #e1e5e9;
+$c-jamaica1: #318712;
+$c-jamaica2: #1946c9;
+$c-jamaica3: #6f4eaa;
+$c-jamaica4: #45afc7;
+$c-border: #989d9e;
+$c-notwhite: #c1bfc7;
+$c-sidebar2: #201c2b;
+$c-darkgray: #525154;
+
 @import 'font-awesome';
 @import 'box-sizing';
+@import 'resets';
+@import 'sidebar';
+
+.section {
+  margin-left: 16rem;
+  padding-right: 2rem;
+}
+
+.main__browse {
+  color: $c-darkgray;
+}
+
+.main__ad {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.list {
+  border-bottom: 0.025rem $c-border solid;
+}
+
+.list__link {
+  margin-right: 0.5rem;
+  color: $c-jamaica3;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 0.15rem $c-jamaica3 solid;
+  }
+}
+
+.list__link1 {
+  border-bottom: 0.1rem $c-jamaica3 solid;
+  color: $c-sidebar;
+}
+
+.link__beta {
+  color: $c-border;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem;
+
+  &__item {
+    flex-basis: calc(100% / 5 - 4rem);
+    flex-grow: 1;
+    margin: 1rem;
+  }
+}
+
+.game-item__pic {
+  min-width: 10rem;
+}
+
+.game-item__popularity {
+  color: $c-border;
+
+}
+
+.frame {
+  padding-top: 0.5rem;
+}
